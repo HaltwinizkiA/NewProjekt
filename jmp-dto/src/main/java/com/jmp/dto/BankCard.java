@@ -1,8 +1,15 @@
-package com.dto;
+package com.jmp.dto;
 
 public class BankCard {
     private String number;
     private User user;
+
+    public BankCard(User user) {
+        this.user = user;
+    }
+
+
+
 
     public String getNumber() {
         return number;

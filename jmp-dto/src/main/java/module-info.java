@@ -1,5 +1,4 @@
-module jmp.dto {
-    exports com.dto;
-    exports com.enums;
+module com.jmp.dto {
+    exports com.jmp.dto;
 
 }

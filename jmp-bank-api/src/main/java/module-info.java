@@ -1,5 +1,6 @@
-module jmp.bank.api {
-    requires jmp.dto;
-    exports com.bank.api;
+module com.jmp.bank.api {
+    requires com.jmp.dto;
+    exports com.jmp.bank.api;
+    exports com.jmp.bank.api.enums;
 
 }
