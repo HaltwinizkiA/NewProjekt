@@ -1,8 +1,7 @@
-
 module jmp.cloud.bank.impl {
-    requires com.jmp.dto;
+    provides com.jmp.bank.api.BankImpl with com.cloud.bank.impl.Bank;
     requires com.jmp.bank.api;
-    provides com.jmp.bank.api.BankImpl  with com.cloud.bank.impl.Bank;
+    requires com.jmp.dto;
     exports com.cloud.bank.impl;
 
 }
