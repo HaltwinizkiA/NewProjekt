@@ -19,7 +19,10 @@ public class Service implements ServiceImpl {
 
     @Override
     public Optional<Subscription> getSubscriptionByBankCardNumber(String bankCardNumber) {
-        return Optional.of(getAllSubscriptions().stream().filter(subscription -> subscription.getBankcard().equals(bankCardNumber)).findFirst().orElseThrow(()->new NotFoundSubscriptionException("keine Subscription")));
+        return Optional.of(getAllSubscriptions().stream()
+                .filter(subscription -> subscription.getBankcard().equals(bankCardNumber))
+                .findFirst()
+                .orElseThrow(()->new NotFoundSubscriptionException("keine Subscription")));
     }
 
     @Override

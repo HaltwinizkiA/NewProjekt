@@ -1,3 +1,8 @@
+dto не знает ((
+
+
+
+
 Necessary Tools
 Java Development Kit 11+
 Apache Maven 3.6.0+
@@ -28,7 +33,7 @@ Git 2.24+
 3. Extend BankCard class with :
 - CreditBankCard
 - DebitBankCard
-4. Create enum :
+4. Create enum : ------------------------------------------------ please move it to dto module
 - [BankCardType]
     CREDIT
     DEBIT
@@ -54,16 +59,15 @@ Git 2.24+
 - requires transitive module with Service interface
 - requires jmp-dto
 - exports implementation of Service interface
-13. Use var for definition of local variables wherever it’s applicable.//todo
+13. Use var for definition of local variables wherever it’s applicable.//todo please read it was is var
 14. Use lambdas and Java 8 features wherever it’s applicable.//+
 15. Create application module.
 16. Add module-info.java which :
-- use interfaces //todo wtf????
+- use interfaces
 - requires module with BankImpl implementation
 - requires module with Service implementation
 - requires jmp.dto;
 17. Demonstrate functionality of created classes.
-(3-4 stars)//todo
 18. Add a new default method for Service interface, which uses getAllUsers. Use LocalDate.now(), ChronoUnit and mapToLong.
 - double getAverageUsersAge();
 19. Add a new static method for Service interface, which returns true, if the user is over 18 years old.
@@ -76,5 +80,5 @@ Git 2.24+
 23. Reimplement createBankCard with method reference (ex: CreditBankCard::new).
 24. Add to module-info jar for each implementation module :
 - provides [interface] with [implementation]
-25. Add a module with Service implementation. Try to use ServiceLoader.load() for module loading.
+25. Add a module with Service implementation. Try to use ServiceLoader.load() for module loading. //todo read about it
 

@@ -1,10 +1,4 @@
-package com.jmp.bank.api.enums;
-
-import com.jmp.dto.BankCard;
-import com.jmp.dto.CreditBankCard;
-import com.jmp.dto.DebitBankCard;
-import com.jmp.dto.User;
-
+package com.jmp.dto;
 
 import java.util.function.Function;
 

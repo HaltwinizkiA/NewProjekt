@@ -1,7 +1,7 @@
 package com.jmp.application;
 
 import com.cloud.bank.impl.Bank;
-import com.jmp.bank.api.enums.BankCardType;
+import com.jmp.dto.BankCardType;
 import com.jmp.dto.User;
 
 public class Main {
